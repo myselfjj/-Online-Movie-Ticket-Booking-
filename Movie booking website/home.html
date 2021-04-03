@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      .contain {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-content: center;
+        padding:5%;
+      }
+      .cont {
+        display: flex;
+        flex-direction: column;
+        height: 47vh;
+        width: 30vh;
+        margin:auto;
+        border-radius: 4px;
+        background: transparent;
+        overflow: hidden;   
+        }
+      .head {
+        height: 88%;
+        background-position: center;
+        background-size: 100%;
+      }
+      .cont:hover
+      {
+          box-shadow:0px 0px 5px rgba(0,0,0,0.4);
+      }
+      .over {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        color:gold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 13px;
+      }
+      .foot {
+        background: transparent;
+        margin: auto;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.5px;
+        overflow: hidden;
+      }
+      .foot a
+      {
+          text-decoration:none;
+          color:white;
+          padding:10px 6px 10px 6px ;
+          background-color:skyblue;
+          text-align: center;
+      }
+      .foot a:hover
+      {
+          background-color:steelblue;
+      }
+      .foot a:active
+      {
+          background-color: rgb(19, 147, 221);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contain">
+      <div class="cont">
+        <div class="head" style="background-image:url(img/poster1.jpeg)">
+          <h3 class="over">9.5/10 IMDb</h3>
+        </div>
+        <div class="foot">
+                <a href="#">Know More</a> 
+                <a href="#">Book Now</a>
+            </div>
+            
+      </div>
+      <div class="cont">
+        <div class="head" style="background-image:url(img/poster2.jpeg)">
+          <h3 class="over">9.5/10 IMDb</h3>
+        </div>
+        <div class="foot">
+                <a href="#">Know More</a> 
+                <a href="#">Book Now</a>
+            </div>
+        </div>
+        <div class="cont">
+          <div class="head" style="background-image:url(img/poster3.jpeg)">
+            <h3 class="over">9.5/10 IMDb</h3>
+          </div>
+          <div class="foot">
+                  <a href="#">Know More</a> 
+                  <a href="#">Book Now</a>
+              </div>
+          </div>
+    </div>
+  </body>
+</html>
